@@ -16,7 +16,7 @@ FRESH_TIME = 0.5#每個動作的秒數方便觀察
 def build_q_table(n_states,actions):
     table = pd.DataFrame(
             np.zeros((n_states,len(actions))),#初始化q—table全0
-            columns = actions,#以列為動作序號
+            columns = actions,#設置欄位名稱（列名稱）為left和right
             )
     print(table)
     return table
